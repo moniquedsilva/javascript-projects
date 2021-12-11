@@ -5,8 +5,33 @@
 }
 
 :root {
-  --clr-board: #d4e4bc;
+  --clr-board: #fcecc9;
   --clr-border: #342e37;
   --clr-snake: #a2d729;
   --clr-apple: #f93943;
+}
+
+body {
+  background-color: var(--clr-board);
+  background-image: linear-gradient(236deg, #fe75fe, #f391a0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.board {
+  border: 1.5rem solid var(--clr-border);
+  box-shadow: 0 3px 6px #202020;
+  width: 120vmin;
+  height: 90vmin;
+}
+
+@media (max-width: 27em) {
+  .board {
+    border: 1rem solid var(--clr-border);
+    width: 90vmin;
+    height: 120vmin;
+  }
 }
